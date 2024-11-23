@@ -84,6 +84,39 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 20,
                     ),
 
+                    TextFormField(
+                      onChanged: (value){},
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.green,
+                        suffixIcon: Icon(Icons.lock),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(
+                            width: 1,
+                            color: Colors.yellow
+                          )
+                        ),
+                        labelText: 'Entrer votre mot de passe '
+                      ),
+                    ),
+                    SizedBox(
+                      height:10
+                    ),
+                    Container(
+                      width:double.infinity,
+                      child:ElevatedButton(
+                        style:ElevatedButton.styleFrom(
+                          backgroundColor: Theme.of(context).primaryColor,
+                        ),
+                        onPressed: ()=>{
+
+                        },
+                        child:Text('Login'),
+                      )
+                    ),
+
+
 
                   ],
                 ),
